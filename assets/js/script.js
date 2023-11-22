@@ -61,7 +61,9 @@ fetch(restcountriesurl).then(res=>res.json()).then((data)=>data.map((element, in
     countryTag= document.createElement("p");
     weatherbtn = document.createElement("button");
     crdHeadDiv = document.createElement("div");
-    hTag = document.createElement("h4");
+    hTag = document.createElement("h1");
+    hTag.id="title";
+    hTag.classList.add("text-center");
 
     //add properties
     colDiv.classList.add("col-lg-4", "mb-5", "col-sm-10");
